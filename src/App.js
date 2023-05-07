@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
 import Rating from "@mui/material/Rating";
+import { kMaxLength } from "buffer";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -30,7 +31,7 @@ function App() {
         {movies.map((movie) => {
           return (
             <div className="card" key={movie.id}>
-              <Card sx={{ maxWidth: 350 }}>
+              <Card sx={{ maxWidth: 300}}>
                 <div>
                   <div className="img">
                     <CardMedia>
@@ -38,9 +39,11 @@ function App() {
                     </CardMedia>
                   </div>
                   <CardContent>
+                    <div className="movie-title">
                     <Typography gutterBottom variant="h5" component="div">
                       {movie.title}
                     </Typography>
+                    </div>
                     {/* <Typography variant="body2" color="text.secondary">
                       {movie.description}
                     </Typography> */}

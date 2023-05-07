@@ -10,13 +10,13 @@
 
 .card {
   justify-items: center;
-  margin: 50px;
+  margin: 20px;
   display:flex;
   flex-flow: column nowrap; 
   flex-direction: row;
-
- flex-flow: row wrap;
- justify-content: flex-start;
+  
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 .card2 {
@@ -25,6 +25,18 @@
   justify-content: center;
 }
 
-.DIR {
-  
+img {
+  display: inline-block;
+  max-height: 300px;
+
+}
+
+.movie-title {
+  clear: both;
+  display: inline-block; 
+  overflow: hidden;
+  white-space: nowrap;
+  flex-shrink: 200;
+  /* border: solid; */
+  margin-right: 100px;
 }
