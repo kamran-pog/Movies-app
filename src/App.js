@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
 import Rating from "@mui/material/Rating";
-import { kMaxLength } from "buffer";
+
 
 function App() {
   const [movies, setMovies] = useState([]);
