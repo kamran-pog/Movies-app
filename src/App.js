@@ -44,17 +44,20 @@ function App() {
                     {/* <Typography variant="body2" color="text.secondary">
                       {movie.description}
                     </Typography> */}
-                    
+                     
                       <Typography variant="caption" display="block" gutterBottom>
-                        Genre: {movie.genre}
+                        Genre: <em>{movie.genre}</em>
                       </Typography>
                       <Typography variant="caption" display="block" gutterBottom>
-                        Director: {movie.director}
+                        Director: <em>{movie.director}</em>
                       </Typography>
+                      
                       <Rating
+                        Rating
                         name="half-rating"
                         defaultValue={movie.metascore}
                         precision={0.5}
+                        readOnly
                       />
                       <CardActions>
                         <Button size="small">Edit</Button>
