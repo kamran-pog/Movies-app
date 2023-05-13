@@ -32,10 +32,10 @@ export default function SignIn() {
         <footer>
           <div className="footers">
             <p>
-              First time? <Link to="/SignUp">Create an account</Link>.
+              First time? <Link to="/SignUp">Create an account</Link>
             </p>
             <p>
-              <Link to="/">Back to Homepage</Link>.
+              <Link to="/">Back to Homepage</Link>
             </p>
           </div>
         </footer>
