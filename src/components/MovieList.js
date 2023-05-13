@@ -9,8 +9,7 @@ import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
 import Rating from "@mui/material/Rating";
 
-
-function Movies() {
+export default function MovieList() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -31,7 +30,7 @@ function Movies() {
         {movies.map((movie) => {
           return (
             <div className="card" key={movie.id}>
-              <Card sx={{ maxWidth: 300}}>
+              <Card sx={{ maxWidth: 300 }}>
                 <div>
                   <div className="img">
                     <CardMedia>
@@ -40,34 +39,28 @@ function Movies() {
                   </div>
                   <CardContent>
                     <div className="movie-title">
-                    <Typography gutterBottom variant="h5" component="div">
-                      {movie.title}
-                    </Typography>
+                      <Typography gutterBottom variant="h5" component="div">
+                        {movie.title}
+                      </Typography>
                     </div>
-                    {/* <Typography variant="body2" color="text.secondary">
-                      {movie.description}
-                    </Typography> */}
-                     
-                      <Typography variant="caption" display="block" gutterBottom>
-                        Genre: <em>{movie.genre}</em>
-                      </Typography>
-                      <Typography variant="caption" display="block" gutterBottom>
-                        Director: <em>{movie.director}</em>
-                      </Typography>
-                      
-                      <Rating
-                        Rating
-                        name="half-rating"
-                        defaultValue={movie.metascore}
-                        precision={0.5}
-                        readOnly
-                      />
-                      <CardActions>
-                        <Button size="small">Edit</Button>
-                        <Button size="small">Remove</Button>
-                        <Button size="small">Description</Button>
-                      </CardActions>
-                  
+                    <Typography variant="caption" display="block" gutterBottom>
+                      Genre: <em>{movie.genre}</em>
+                    </Typography>
+                    <Typography variant="caption" display="block" gutterBottom>
+                      Director: <em>{movie.director}</em>
+                    </Typography>
+                    <Rating
+                      Rating
+                      name="half-rating"
+                      defaultValue={movie.metascore}
+                      precision={0.5}
+                      readOnly
+                    />
+                    <CardActions>
+                      <Button size="small">Edit</Button>
+                      <Button size="small">Remove</Button>
+                      <Button size="small">Description</Button>
+                    </CardActions>
                   </CardContent>
                 </div>
               </Card>
@@ -78,5 +71,3 @@ function Movies() {
     </div>
   );
 }
-
-export default Movies;
