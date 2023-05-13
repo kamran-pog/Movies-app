@@ -32,9 +32,11 @@ export default function SignUp() {
           </p>
         </form>
         <footer>
-          <div className="footers">
+          <div className="footers"> <p>
+              Already have an account? <Link to="/SignIn">Sign In</Link>
+            </p>
             <p>
-              <Link to="/">Back to Homepage</Link>.
+              <Link to="/">Back to Homepage</Link>
             </p>
           </div>
         </footer>
