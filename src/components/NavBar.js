@@ -20,10 +20,14 @@ export default function NavBar() {
               FilmFaves
             </Typography>
             <Button color="inherit">
-              <Link to="/SignIn" style={{ textDecoration: 'none' }}>SignIn</Link>
+              <Link to="/SignIn" style={{ textDecoration: "none" }}>
+                SignIn
+              </Link>
             </Button>
             <Button color="inherit">
-              <Link to="/SignUp" style={{ textDecoration: 'none' }}>SignUp</Link>
+              <Link to="/SignUp" style={{ textDecoration: "none" }}>
+                SignUp
+              </Link>
             </Button>
           </Toolbar>
         </AppBar>
