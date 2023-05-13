@@ -1,13 +1,15 @@
 import React from 'react'
 import NavBar from './NavBar'
-import Movies from './movies'
+import MovieList from './MovieList'
+
+
 
 
 export default function Home() {
   return (
     <div>
-        <NavBar/>
-        <Movies/>
+        <NavBar />
+        <MovieList />
     </div>
   )
 }

@@ -33,33 +33,5 @@ export default function NavBar() {
         </Switch>
       </Box>
     </Router>
-    // <Box sx={{ flexGrow: 1 }}>
-    //   <AppBar position="static">
-    //     <Toolbar>
-    //       <Typography
-    //         fontFamily="monospace"
-    //         variant="h6"
-    //         component="div"
-    //         sx={{ flexGrow: 1 }}
-    //       >
-    //         FilmFaves
-    //       </Typography>
-    //       <Router>
-    //         <Button color="inherit">
-    //           <Link to="/SignIn">SignIn</Link>
-    //         </Button>
-    //         <Button color="inherit">
-    //           <Link to="/SignUp">SignUp</Link>
-    //         </Button>
-    //       </Router>
-    //     </Toolbar>
-    //   </AppBar>
-    //   <Router>
-    //     <Switch>
-    //       <Route path="/SignIn" component={SignIn} />
-    //       <Route path="/SignUp" component={SignUp} />
-    //     </Switch>
-    //   </Router>
-    // </Box>
   );
 }

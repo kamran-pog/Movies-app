@@ -15,28 +15,3 @@ function App() {
 }
 
 export default App;
-
-// return (
-//   <Router>
-//     <div className="App">
-//       <ul>
-//         <li>
-//           <Link to="/login">Login</Link>
-//         </li>
-//         <li>
-//           <Link to="/logout">Logout</Link>
-//         </li>
-//         <li>
-//           <Link to="/protected">Protected Page</Link>
-//         </li>
-//       </ul>
-//       <Switch>
-//         <PrivateRoute exact path='/protected' component={GasPrices}/>
-//         <Route path="/logout" component={Logout} />
-//         <Route path="/login" component={Login} />
-//         <Route path="/" component={Login} />    
-//       </Switch>
-//     </div>
-//   </Router>
-// );
-// }
