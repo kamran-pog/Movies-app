@@ -1,82 +1,44 @@
-import "./App.css";
-import { useEffect } from "react";
-import React, { useState } from "react";
-import axios from "axios";
-import Card from "@mui/material/Card";
-import { CardContent, CardMedia } from "@mui/material";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import CardActions from "@mui/material/CardActions";
-import Rating from "@mui/material/Rating";
+import React from 'react';
 
+import Movies from './components/Movies';
+import SignIn from './components/SignIn';
+import Home from './components/Home';
+import NavBar from './components/NavBar';
+
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 function App() {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    axios("https://movies-list.herokuapp.com/api/movies")
-      .then((response) => {
-        console.log(response);
-        setMovies(response.data);
-      })
-
-      .catch((error) => console.log(error));
-  }, []);
-
   return (
-    <div>
-      <h1 className="Title">Movie List</h1>
-
-      <div className="card card2">
-        {movies.map((movie) => {
-          return (
-            <div className="card" key={movie.id}>
-              <Card sx={{ maxWidth: 300}}>
-                <div>
-                  <div className="img">
-                    <CardMedia>
-                      <img src={movie.image} alt={movie.title} />
-                    </CardMedia>
-                  </div>
-                  <CardContent>
-                    <div className="movie-title">
-                    <Typography gutterBottom variant="h5" component="div">
-                      {movie.title}
-                    </Typography>
-                    </div>
-                    {/* <Typography variant="body2" color="text.secondary">
-                      {movie.description}
-                    </Typography> */}
-                     
-                      <Typography variant="caption" display="block" gutterBottom>
-                        Genre: <em>{movie.genre}</em>
-                      </Typography>
-                      <Typography variant="caption" display="block" gutterBottom>
-                        Director: <em>{movie.director}</em>
-                      </Typography>
-                      
-                      <Rating
-                        Rating
-                        name="half-rating"
-                        defaultValue={movie.metascore}
-                        precision={0.5}
-                        readOnly
-                      />
-                      <CardActions>
-                        <Button size="small">Edit</Button>
-                        <Button size="small">Remove</Button>
-                        <Button size="small">Description</Button>
-                      </CardActions>
-                  
-                  </CardContent>
-                </div>
-              </Card>
-            </div>
-          );
-        })}
-      </div>
-    </div>
+    
+    <Router>
+        <Home/>
+    </Router>
   );
 }
 
 export default App;
+
+// return (
+//   <Router>
+//     <div className="App">
+//       <ul>
+//         <li>
+//           <Link to="/login">Login</Link>
+//         </li>
+//         <li>
+//           <Link to="/logout">Logout</Link>
+//         </li>
+//         <li>
+//           <Link to="/protected">Protected Page</Link>
+//         </li>
+//       </ul>
+//       <Switch>
+//         <PrivateRoute exact path='/protected' component={GasPrices}/>
+//         <Route path="/logout" component={Logout} />
+//         <Route path="/login" component={Login} />
+//         <Route path="/" component={Login} />    
+//       </Switch>
+//     </div>
+//   </Router>
+// );
+// }
