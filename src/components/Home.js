@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from './NavBar'
-import Movies from './Movies'
+import Movies from './movies'
 
 
 export default function Home() {

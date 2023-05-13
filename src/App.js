@@ -1,6 +1,4 @@
 import React from 'react';
-
-import Movies from './components/Movies';
 import SignIn from './components/SignIn';
 import Home from './components/Home';
 import NavBar from './components/NavBar';

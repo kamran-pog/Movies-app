@@ -10,7 +10,7 @@ import CardActions from "@mui/material/CardActions";
 import Rating from "@mui/material/Rating";
 
 
-function Movies() {
+function movies() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -79,4 +79,4 @@ function Movies() {
   );
 }
 
-export default Movies;
+export default movies;
