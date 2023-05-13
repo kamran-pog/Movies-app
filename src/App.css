@@ -19,6 +19,17 @@
   justify-content: flex-start;
 }
 
+.Sign {
+  display: flex;
+  text-align: right;
+}
+
+.App {
+  font-family: 'Roboto', sans-serif;
+  text-align: right;
+  padding-bottom: 36px;
+}
+
 .card2 {
   display: flex;
   flex-wrap:wrap;
