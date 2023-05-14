@@ -1,12 +1,17 @@
 import React from "react";
-import NavBar from "./NavBar";
-import MovieList from "./MovieList";
+import moviesimg from "../assets/images/netflix.jpg";
 
 export default function Home() {
   return (
-    <div>
-      <NavBar />
-      <MovieList />
-    </div>
+    <div
+      style={{
+        backgroundImage: `url(${moviesimg})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        width: "100vw",
+        height: "100vh",
+      }}
+    ></div>
   );
 }

@@ -4,6 +4,7 @@ import SignIn from "./SignIn";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import SignUp from "./SignUp";
+import Home from "./Home";
 
 export default function NavBar() {
   return (
@@ -32,6 +33,7 @@ export default function NavBar() {
           </Toolbar>
         </AppBar>
         <Switch>
+          <Route exact path="/" component={Home} />
           <Route path="/SignIn" component={SignIn} />
           <Route path="/SignUp" component={SignUp} />
         </Switch>
