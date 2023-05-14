@@ -11,6 +11,11 @@ body {
 
 .m-5-auto {
     margin: 5rem auto;
+    color: #ddd;
+}
+
+.fontColor {
+    color: black;
 }
 
 .primary-button {
@@ -153,4 +158,5 @@ h2 {
 
 .footers {
     text-align: center;
+    color: white;
 }
